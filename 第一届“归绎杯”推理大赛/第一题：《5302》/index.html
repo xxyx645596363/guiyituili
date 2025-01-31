@@ -1,0 +1,1127 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="余有行于京洛兮">
+      
+      
+      
+        <link rel="prev" href="../%E6%AF%94%E8%B5%9B%E7%AE%80%E4%BB%8B/">
+      
+      
+      
+      <link rel="icon" href="../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.49">
+    
+    
+      
+        <title>第一题：《5302》 - 归绎推理小站</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a40c8224.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#5302" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="归绎推理小站" class="md-header__button md-logo" aria-label="归绎推理小站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            归绎推理小站
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第一题：《5302》
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  站点简介
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../%E5%BE%80%E6%9C%9F%E8%B0%9C%E9%A2%98%E7%B2%BE%E9%80%89/%E4%BA%94%E4%B8%AA%E9%AA%91%E5%A3%AB/" class="md-tabs__link">
+          
+  
+  往期谜题精选
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../%E6%8A%A5%E5%90%8D%E9%98%9F%E4%BC%8D/" class="md-tabs__link">
+          
+  
+  第一届“归绎杯”推理大赛
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="归绎推理小站" class="md-nav__button md-logo" aria-label="归绎推理小站" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89 89">
+  <path d="M3.136,17.387l0,42.932l42.932,21.467l-42.932,-64.399Z" />
+  <path d="M21.91,8l42.933,64.398l-18.775,9.388l-42.932,-64.399l18.774,-9.387Z" style="fill-opacity: 0.5" />
+  <path d="M67.535,17.387l-27.262,18.156l21.878,32.818l5.384,2.691l0,-53.665Z" />
+  <path d="M67.535,17.387l0,53.666l18.774,-9.388l0,-53.665l-18.774,9.387Z" style="fill-opacity: 0.25" />
+</svg>
+
+    </a>
+    归绎推理小站
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    站点简介
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    往期谜题精选
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            往期谜题精选
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BE%80%E6%9C%9F%E8%B0%9C%E9%A2%98%E7%B2%BE%E9%80%89/%E4%BA%94%E4%B8%AA%E9%AA%91%E5%A3%AB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    五个骑士
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BE%80%E6%9C%9F%E8%B0%9C%E9%A2%98%E7%B2%BE%E9%80%89/%E5%A4%9C%E7%9A%84%E7%AC%AC%E4%B8%83%E7%AB%A0/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    夜的第七章
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BE%80%E6%9C%9F%E8%B0%9C%E9%A2%98%E7%B2%BE%E9%80%89/%E5%A4%AA%E7%A9%BA%E6%97%85%E8%A1%8C%E6%9D%80%E4%BA%BA%E4%BA%8B%E4%BB%B6/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    太空旅行杀人事件
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BE%80%E6%9C%9F%E8%B0%9C%E9%A2%98%E7%B2%BE%E9%80%89/%E6%9C%AC%E8%8D%89%E7%BA%B2%E7%9B%AE%C2%B7%E5%8F%A4%E9%81%93%E5%83%B5%E5%B0%B8%E4%B9%8B%E8%B0%9C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    本草纲目·古道僵尸之谜
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BE%80%E6%9C%9F%E8%B0%9C%E9%A2%98%E7%B2%BE%E9%80%89/%E7%99%BD%E4%BA%91%E4%B9%8B%E4%B8%8B%E6%9A%B4%E9%9B%A8%E8%87%B3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    白云之下暴雨至
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../%E5%BE%80%E6%9C%9F%E8%B0%9C%E9%A2%98%E7%B2%BE%E9%80%89/%E9%9F%B3%E4%B9%90%E6%95%99%E5%AE%A4%E4%B9%8B%E8%B0%9C/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    音乐教室之谜
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    第一届“归绎杯”推理大赛
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            第一届“归绎杯”推理大赛
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%8A%A5%E5%90%8D%E9%98%9F%E4%BC%8D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    报名队伍（01.31 19:00更新）
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../%E6%AF%94%E8%B5%9B%E7%AE%80%E4%BB%8B/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    比赛预告
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    第一题：《5302》
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    第一题：《5302》
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0" class="md-nav__link">
+    <span class="md-ellipsis">
+      【0】侠客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      【1】新客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      【2】闲客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      【3】访客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      【4】游客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      【5】宾客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      【6】黑客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      【7】才客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      【8】刺客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      【9】谋客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      【10】常客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      挑战读者
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#0" class="md-nav__link">
+    <span class="md-ellipsis">
+      【0】侠客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      【1】新客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      【2】闲客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      【3】访客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      【4】游客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      【5】宾客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      【6】黑客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      【7】才客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      【8】刺客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      【9】谋客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      【10】常客
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      挑战读者
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<p><font size=6><center>第一届“归绎杯”推理大赛第一题 </center></font></p>
+<h1 id="5302"><center>《5302》</center></h1>
+<p align="right">作者：Lan4e</p>
+
+<p><font color="#F00000" size=6><b><html>
+<head>
+    <title>Countdown Timer</title>
+</head></p>
+<body>
+    <div id="countdown"></div>
+    <script>
+        var countDownDate = new Date("Feb 3, 2025 19:00:00").getTime();
+        var x = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countdown").innerHTML ="距离本题作答截止还有" + days + "天" + hours + "小时" + minutes + "分钟" + seconds + "秒";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "本题已截止作答";
+            }
+        }, 1000);
+    </script>
+</body>
+<p></html></b></font></p>
+<p><font size=6><b><a href="https://www.wjx.cn/vm/wWi2hcc.aspx#">点击此处跳转至答题问卷</a></b></font></p>
+<p><img alt="alt text" src="../../images/%E7%AC%AC%E4%B8%80%E5%B1%8A%E5%A4%A7%E8%B5%9B/5302.png" /></p>
+<h2 id="0">【0】侠客</h2>
+<p>2016年的中秋，市中心的一栋老旧公寓里发生了一起惊心动魄的入室抢劫案。接到报警的警方迅速赶赴现场，伤者是一位名叫姚克的中年男子。调查人员很快发现，姚克并非普通人，而是一个臭名昭著的黑帮头目。他长期通过威胁恐吓来夺取他人财物，积累了大量的财富。他的恶行引起了众人的愤怒和恐惧，但碍于他的黑道身份，民众往往只是敢怒而不敢言。</p>
+<p>现场的灯光昏黄，空气中弥漫着一股压抑的气氛。调查人员发现姚克倒在客厅的地板上，身上受到六处刀伤，身旁散落着一些文件。显然，袭击者在翻找什么重要的东西。警方仔细勘察现场，发现了几处细微的线索：门锁被撬开的痕迹，地板上的血迹，以及一些不属于姚克的鞋印。</p>
+<p>通过初步调查，警方确定了两名嫌疑人的特征：其中一人身高在158到166厘米之间；另一人身高在172到177厘米之间。</p>
+<p>在调查过程中，警方逐渐了解到，那天夜晚，姚克正孤身在家，处理着一叠重要的文件。大约晚上11点，两名蒙面歹徒撬开了他的公寓门锁，悄无声息地闯入了他的住所。他们动作迅捷，目标明确，直奔客厅而去，用刀刺伤姚克后，拿走了姚克随身携带的一个信封。而姚克身受重伤当场昏迷，昏迷后丧失了对信封内容和歹徒特征的记忆。</p>
+<p>许多市民听闻此事，纷纷庆幸终于有人对姚克的恶行采取了行动，甚至称呼这二人为“侠客”。</p>
+<p>然而，警方的职责是追踪每一个罪犯，不论他们的动机为何。尽管警方动用了大量资源进行广泛搜捕，案件却始终没有突破性的进展。这桩案件，随着时间的流逝，渐渐成为了城市中的一桩悬案。</p>
+<h2 id="1">【1】新客</h2>
+<p>X公司2021拟录用人员名单：梅索、梁美君、陈玮珊、黄莉洁。</p>
+<h2 id="2">【2】闲客</h2>
+<p>我叫梅索，是X公司的一名普通职员。每天早上，我都会早早来到公司，开始一天的工作。在我们开放式的办公室里，除了我，还有三位和我年纪差不多的女同事，巧合的是我们都是同一批进入公司的，还都是校友。</p>
+<p>美君是我们团队的开心果，她总是能用她的幽默感和乐观态度让我们忘记工作的压力。她那双大眼睛总是闪烁着好奇的光芒，喜欢听各种奇闻异事。</p>
+<p>玮珊是个冷静且理智的女孩，做事一丝不苟。她思维缜密，逻辑性强，经常能一针见血地指出问题所在。虽然她话不多，但每次发言都能让人印象深刻。  </p>
+<p>莉洁则是一个充满活力的女孩，热爱运动，性格开朗，喜欢冒险和挑战，总是敢于尝试新鲜事物。她的笑声经常在办公室里回荡，感染着每个人。另外，她也是大家公认的游戏大神，在她的办公桌旁还能看到游戏周边。在午休时，往往能够看到她拿起手机，沉浸在游戏世界里。</p>
+<p>今天的早晨，空气中弥漫着一丝紧张和期待。我一进门，便对她们笑着说：“大家早呀。”</p>
+<p>“索儿早上好！”美君笑着回应，“今天有什么新鲜事吗？”</p>
+<p>我神秘地笑了笑：“我昨天晚上听到了一个谜案，想和你们分享。” 美君眼睛一亮：“快讲讲！”</p>
+<p>玮珊也放下手中的文件，静静地看着我，等待着故事的开始。</p>
+<p>莉洁则一边整理桌上的资料，一边竖起耳朵听。我清了清嗓子，开始讲述：“2016年，在城市的一栋老旧公寓里，发生了一起入室抢劫案，受害者是一个叫姚克的黑帮头目。警方迅速赶到现场，发现他身上受到六处刀伤，文件散落一地。现场还留有一些鞋印和血迹。虽然社区里的人对姚克的恶行深恶痛绝，但警方依然在尽力追查凶手。”</p>
+<p>莉洁听到这里，忍不住插话：“听起来像电影情节，姚克也是恶有恶报吧。”</p>
+<p>玮珊皱着眉头，似乎在思考什么：“但这也让我们看到，正义有时候并不是通过法律来实现的。那些所谓的‘侠客’，是否真的在做对的事情？”  </p>
+<p>美君则好奇地问：“那后来呢？警方有没有找到凶手？”</p>
+<p>我摇了摇头：“没有，案子一直没有突破性的进展，最终成了一桩悬案。”</p>
+<p>正当我们讨论得兴致勃勃的时候，古在仁走了过来。她是我们的直属上司，一个严厉的女领导。看到我们在讨论，她皱起眉头，语气严厉地说道：“你们几个在干什么？现在是工作时间，不是聊天时间。赶紧回到你们的岗位上！还有，我刚刚收到消息，美君你申请的那个工作经费，上头表示目前资金紧缺，得2027年底才考虑这笔预算。肯定是你们申请材料写得太差，领导才没同意今年给的。”</p>
+<p>我们立刻收起笑容，回到各自的工作中。办公室里再次恢复了安静，只有键盘敲击的声音在空气中回荡。</p>
+<p>过了一会儿，确认古在仁走远后，美君忍不住小声嘀咕道：“真是的，这么严格，连聊几句都不行。”</p>
+<p>玮珊也叹了口气：“是啊，每次看到她都觉得压力山大。”</p>
+<p>莉洁则撇撇嘴：“这种领导真是让人头疼。”</p>
+<p>我笑了笑，缓和气氛道：“好了，不说她了。你们昨晚有看欧洲杯的比赛吗？昨晚那场比赛真是精彩！”</p>
+<p>听到足球话题，莉洁立刻来了兴致：“当然看了！那场比赛简直是神仙打架，进球太精彩了！”  </p>
+<p>玮珊点点头：“我也看了，东道主德国队战术运用得非常巧妙，教练的指挥也很到位呀。”</p>
+<p>美君则兴奋地说：“对的对的，他们表现得太好了！”</p>
+<p>我们又开始热烈地讨论起欧洲杯比赛，办公室里再次充满了欢声笑语。</p>
+<h2 id="3">【3】访客</h2>
+<p>次日清晨的办公室依旧如往常般安静，我和同事们正在享受难得的闲聊时光。突然，办公室的门被敲响，打断了我们的谈话。所有人瞬间紧张起来，互相交换着疑惑的眼神。</p>
+<p>“谁会在这个时候来？”美君低声问道。</p>
+<p>“会不会是领导呢？”玮珊猜测道。</p>
+<p>莉洁起身走向门口，心跳加速，她深吸一口气，打开了门。</p>
+<p>门外站着一位年轻的女子，身材高挑，穿着整洁的职业套装，手里拿着一份文件。她微微一笑，点了点头，道：“不好意思，打扰了。我是内部审计部门的郑嘉年，来送一份文件给梅索。”</p>
+<p>她的语气冷淡而礼貌，给人一种高冷的感觉，让人不禁多看了几眼。</p>
+<p>“哦，原来是你啊，快进来吧。”莉洁笑着说道，示意她进来。</p>
+<p>郑嘉年走进办公室，将文件递给我，简单寒暄几句便离开了。</p>
+<p>望着她离去的背影，美君忍不住问道：“你们说，我们单位审计部门好久没招人了，怎么今年招人了呢？”</p>
+<p>玮珊耸耸肩：“是啊，我也觉得奇怪。会不会是走后门进来的？”</p>
+<p>我摇摇头：“不太可能吧。听说进内部审计部门要审查三代无犯罪记录等一系列的背景调查，还是很严格的。”</p>
+<p>莉洁点头附和：“对，那个部门可严格了，不像我们这个部门，不用接受审查。而且她看起来也不像那种靠关系进来的。只是希望她能尽快适应工作，毕竟审计部门可是很重要的。”</p>
+<p>大家讨论了一阵，话题不知不觉转到郑嘉年的身高上。 美君感叹道：“她真的很高啊。索儿，你在我们公司里面算很高的了，我觉得她比你还高吧？”  </p>
+<p>我点点头：“我之前体检，测出来是一米七整，我觉得她大概有1米74左右。”</p>
+<p>美君接着说道：“真羡慕你们这些长得高的，我测出来是1米64。”</p>
+<p>玮珊笑道：“君君你就别羡慕了，我才1米6整。”</p>
+<p>莉洁也加入进来：“那我就最矮了，才1米58。”</p>
+<p>她们都笑了起来，美君突然问道：“你们知道她为什么叫‘嘉年’吗？这个名字挺特别的。”</p>
+<p>玮珊摇摇头：“不知道诶，是有什么特别的含义吗？”</p>
+<p>我想起了之前曾经和她交流过，便说道：“其实我和她简单聊过。她说因为她出生在除夕夜，家人希望她能带来快乐和好运，所以取名‘嘉年’，寓意着‘佳节’和‘新年快乐’。”</p>
+<p>“原来如此，真有意思。”美君感叹道。</p>
+<p>随着办公室的氛围慢慢恢复平静，大家各自回到了自己的工作岗位上。虽然郑嘉年的来访引发了一些讨论，但大家也很快也回归了日常的节奏中。望着手中的文件，我不禁感叹道：“希望她的到来，真的像她名字那样会给我们带来好运。”</p>
+<p>翻着郑嘉年刚刚提交的材料，我发现了一个问题。</p>
+<p>我拿起电话，拨通了她的座机号码。电话那头很快传来她冷静的声音：“你好，审计部。”</p>
+<p>“你好，嘉年，我是梅索，负责员工资料录入的。”我开门见山地说道，“我在核对你的入职资料时发现一个小问题，你刚刚交给我的纸质材料中，父亲的名字在资料上写的是‘郑东’，东西的东，但系统中显示的是‘郑冬’，冬天的冬。应该是有一个填错了吧，能确认下是哪个吗？”</p>
+<p>电话那头沉默了一下，随后传来她略带歉意的声音：“是东西的东，系统上填写错了。”</p>
+<p>“好的，那你需要登录系统进行修改。还记得你的密码吗？”我问道，心想着尽快解决问题。</p>
+<p>她似乎有些困惑，停顿几秒后说道：“对不起，我不太记得了。”</p>
+<p>“没关系，”我安慰道，“如果你没修改过密码的话，那就是四位数的出生月日，应该是0131哈。”</p>
+<p>电话那头传来她恍然大悟的声音，“啊，对，是0131，我现在登进去了。谢谢你，梅索。”</p>
+<p>“不客气，记得尽快修改哦。”我挂了电话。几分钟后，我再登录系统，发现信息已经改过来了，确认无误后，我将材料交了给上司，心想着这个小插曲总算解决了。</p>
+<h2 id="4">【4】游客</h2>
+<p>一周后，作为单位的代表，我被上司安排到位于市中心的法医鉴定中心进行一次参观学习。这个机会来之不易，不仅可以了解最新的法医技术，还能见到许久未见的朋友。怀着既兴奋又紧张的心情，我迈入了法医鉴定中心的大门。</p>
+<p>“梅索，好久不见。”一个熟悉的声音从侧面传来。我转过头，看到叶雨正向我微笑。她穿着一身干练的白色实验服，神采奕奕。</p>
+<p>“雨姐，好久不见。”我握住她的手，“第一次见面的时候我还在读大学，转眼间我也工作好几年啦。”</p>
+<p>叶雨仔细打量了我一下，笑着点头，“是啊，梅索，现在看上去成熟了不少，更有了几分专业人士的气质。”</p>
+<p>“谢谢夸奖，听说你们这儿有很多先进的设备和有趣的案件，今天可要好好见识一下。”我谦虚地回应道。</p>
+<p>“当然，我会全程陪同你。”叶雨笑着点头，带我走进了法医鉴定中心的参观通道。</p>
+<p>这座建筑内部充满了冷静与专业的气息。叶雨一边走，一边详细地向我介绍每一个部门和设备。她讲得深入浅出，我听得津津有味，不时提出问题，她也耐心地解答。</p>
+<p>参观过程中，我忍不住提到自己对悬疑案件的兴趣，叶雨不由得眼睛一亮。</p>
+<p>“既然你对悬疑感兴趣，不如我给你出一道题？”她笑着问。</p>
+<p>“好呀，我洗耳恭听。”我好奇地看向她。</p>
+<p>“三年前发生了一起盗窃案，犯人通过正常输密码的方式打开了一个保险箱，盗取了里面的财物。但是后来在逃跑的过程中被当场抓获，最终被判刑。”</p>
+<p>“犯人在以下三人之间：古在仁，女性，身高1.54米，52岁；丁宇楠，男性，45岁，身高1.75米；郑东，男性，46岁，身高1.63米，详细情况可以参考这个。目前线索就这些，其他信息你也可以网上搜。”</p>
+<p>我皱眉思索了一会儿，拿起叶雨提供的资料端详起来。</p>
+<p>“咦，这个不就是我上司吗，看上去就不像会去犯罪的人，应该不是她吧。”初入眼帘的是古在仁的材料，我自言自语道。</p>
+<p>看到郑东的照片时，我也愣了一下，这张脸和前段时间郑嘉年上传到单位系统的资料照片几乎一致。这让我有些意外，但暂时还无法判断。</p>
+<p>最后，我翻了翻起丁宇楠的背景资料。其中一条比较引人注目的是：丁宇楠背着妻子刘兰希包养了情人。2016年9月15日晚上22:40，丁宇楠的情人在R地坠楼死亡，跳楼时意识是清醒的，现场并未发现使用延时装置的痕迹。当时警方的判断是，该案存在自杀和他杀两种可能，没有足够的证据指向其中某一个结论。如果是他杀，那么只有可能是由丁宇楠亲手把死者推下楼。</p>
+<p>“那雨姐，我有个问题，R地是在哪里呢？我都没听说过。”</p>
+<p>“R地吗？在郊区呢，可远了，我们这儿过去最快两个小时才能到，要穿过P县和Q县呢，就算从邻近它的Q县过去最快都得半小时。”</p>
+<p>“那你们后面抓到犯人后，犯人有交代什么吗？”</p>
+<p>“那个保险箱有两层保护，第一层是需要用钥匙打开，第二层是需要按密码打开。犯人说那把保险箱钥匙是从街上捡的，密码是碰运气猜到了的，但他也忘记密码是啥了。”叶雨说道，“但我们觉得他在撒谎，因为那个保险箱密码虽然是数字密码，但是不知道密码的位数，通过人工暴力破解的方式，拆解也是也遥遥无期的。技术部门用高科技破解都用了三十个小时。”</p>
+<p>“那失窃者有没有什么线索呢？”</p>
+<p>“失窃者也提供不了什么线索，他只是帮别人保管这个保险箱，没有钥匙、也不知道密码是什么。”</p>
+<p>我点了点头。</p>
+<p>“怎么样，有什么结论不？”</p>
+<p>思绪飞速运转，我对叶雨说道，“雨姐，古在仁是我的上司，她为人谨慎，我暂时排除她。郑东是郑嘉年的父亲，虽然这很出乎我意料，但我还没有更多的证据，所以也不好下定论。丁宇楠的背景最为复杂，他曾涉嫌谋杀，如果他真的杀人了，那么再次犯罪也是有可能的。”</p>
+<p>“很好。你分析得很有条理。虽然现在线索不够，但你已经有了一个初步的推理方向。” 叶雨微微一笑，“没事，你到时再研究研究呗。”</p>
+<p>参观结束后，叶雨带我来到法医鉴定中心的门口。夕阳的余晖洒在她的白色实验服上，显得格外温暖。</p>
+<p>“梅索，今天和你聊得很开心，也希望你能对我们的工作有更深的了解。”叶雨微笑着说道。</p>
+<p>“谢谢雨姐，今天真的学到了很多。”我由衷地说道，“也非常感谢你带我参观，还给了我这么有趣的案件来思考。”</p>
+<p>“你很聪明，有机会我们可以再一起探讨更多的案件。”叶雨拍拍我的肩膀，“希望你能在工作中继续保持这份好奇心和钻研精神。”</p>
+<h2 id="5">【5】宾客</h2>
+<p>今天，X公司迎来了一位来自Y公司的客人，与业务部门洽谈合作事宜。洽谈结束后，他和业务部领导江月明带着满意的表情走进了古在仁的办公室。</p>
+<p>客人叫于晓良，与古在仁是老相识。他和江明月均是大约四十五岁的男性。</p>
+<p>“古主任，好久不见。”我听到于晓良热情地打招呼道。他身材高大挺拔，大约有1米85，穿着一套深蓝色的西装，显得非常专业和干练。隔着玻璃窗，我能看到他笑容满面的脸庞。“今天我们来谈合作，顺便也来找你叙叙旧。”</p>
+<p>“是啊，好久不见。你总算有时间过来找我了。”古在仁笑着回应。</p>
+<p>站在于晓良旁边的江月明，看上去大约比我高一些，可能1米73的样子，身材修长而匀称。他穿着一件浅灰色的休闲西装，没有打领带，显得更加轻松随意。他脸上总是挂着微笑，透出一股聪明和机灵的光芒。</p>
+<p>三人在办公室里聊了一会儿时间过得飞快，很快就到了他们该分别的时刻。</p>
+<p>“今天还是聊得蛮开心的，下次你来我们公司我请你吃饭。”门外，于晓良还是依依不舍。</p>
+<p>“哎呀，于经理客气了，有空一定去你那儿。我送你吧。”</p>
+<p>他们三人往电梯那一头走去。</p>
+<p>因为莉洁有外出工作任务，因此现在办公室只剩下我、美君和玮珊，我们就开始了八卦。</p>
+<p>“你们觉得他们在谈什么？”玮珊好奇地问。</p>
+<p>“可能是新的合作项目吧，看起来很重要的样子。”我回应道。</p>
+<p>“也有可能只是叙旧，听说晓良和我们古主任以前还是竞争对手呢。”梁美君说道，“等我去个洗手间就来和你们说。”</p>
+<p>美君刚走没多久，莉洁就办完外勤工作回来了。她一进办公室，显得有些疲惫，轻轻地叹了口气，把手中的文件夹放到桌上。</p>
+<p>“小洁，你回来了啊，看起来挺累的，今天外勤忙吗？”玮珊关心地问道。</p>
+<p>“是啊，今天有好多事情要处理，去了好几个地方。”莉洁回应道，擦了擦额头上的汗，“不过总算都搞定了。”</p>
+<p>我点点头：“辛苦了，来喝点水休息一下吧。” 莉洁接过我递来的水杯，喝了一口，然后笑着说：“谢谢，你们刚才在聊什么呢？”</p>
+<p>“我们刚刚在聊八卦，等君君回来呢……”我笑着说，“你回来的时候有没有见到什么人呀？”</p>
+<p>“我没看到呀，快快给我说八卦吧！我最喜欢了！”莉洁兴奋地说。</p>
+<p>“聊谁的八卦啊，看来你们很有空呢。”不知什么时候，古在仁出现在办公室门口。“那这个任务将就交给莉洁就你了。”</p>
+<p>古在仁将一个包裹递给了莉洁：“莉洁，这个包裹需要送到一个比较远的朋友那儿，麻烦你将这个包裹交给晓良，他刚刚走开。晓良住在我朋友附近，他可以顺路帮忙送过去。收件人和地址都写在包裹上了。”</p>
+<p>莉洁点头答应：“好的，古主任。”</p>
+<p>古在仁叮嘱道：“事情比较紧急，不要耽搁啊。”</p>
+<p>“明白，我这就去。”小洁接过包裹，往门外走去。</p>
+<p>不一会，莉洁回来了，但是我们也没有心情继续聊八卦，害怕被上司批评，只好老老实实工作。</p>
+<h2 id="6">【6】黑客</h2>
+<p>“又到六点下班的时间了！”我伸了伸懒腰，收拾东西准备撤，但好像觉得有哪里不对，“小洁、阿珊你们今天准时下班不？”</p>
+<p>“走走走，我一点也不想加班！”莉洁回答道，说罢就拿起手提包走出门外。</p>
+<p>“索儿，帮我关一下电脑呗，我不回来了。”手机收到信息，是美君发来的。</p>
+<p>啊，我知道是哪里不对劲了。“君君我还以为你掉进厕所了呢，去了之后这么久都没回来。”</p>
+<p>“别提了，古主任突然安排我去干活，只好赶紧去跟进了。”</p>
+<p>“阿珊你呢？要加班不？”</p>
+<p>“我也准备走了。我收拾一下。”</p>
+<p>两分钟后，玮珊也收拾好了个人物品，往门外走去。</p>
+<p>一个个都走得这么快！离谱！</p>
+<p>她离开没多久，门外突然传来“乓”的巨响。</p>
+<p>我赶紧走出门外，发现玮珊跌倒在地。我急忙过去查看情况。</p>
+<p>“玮珊，你没事吧？”我担心地问道。</p>
+<p>玮珊捂着膝盖，表情有些痛苦：“我没事，就是过转角的时候被一个人撞了，没看清楚那个人的具体外貌，只知道对方比我高，手上挽着一个袋子，袋子里面的东西看起来有点像钞票。”</p>
+<p>我扶起玮珊，看了看她的膝盖，幸好只是擦伤，没有大碍。</p>
+<p>“你还能站起来吗？需要去看医生吗？”我问。</p>
+<p>“没事，就是擦破点皮，我自己处理一下就好了。”玮珊站起来，拍拍身上的灰尘。</p>
+<p>“那个人呢？撞了你就跑了？”我环顾四周，试图找到那个撞到她的人，但走廊上已经空无一人，玮珊旁边散落着两张百元钞票。</p>
+<p>“嗯，可能是急着走吧。算了，没事。”玮珊勉强笑了笑。</p>
+<p>“好吧，那你回家小心点，有什么问题一定要告诉我。”我叮嘱道。</p>
+<p>第二天早上，我刚到公司就听到了一个震惊的消息：大约是昨天下午18:10，有人攻破了单位保密室的一个保险柜，里面的15万元钞票、密件被洗劫一空。现在警方已经介入调查了。</p>
+<p>目前了解到的情况是保密室的门有两道锁，第一道锁是密码锁，只有内部人员才知道密码，第二道锁需要钥匙打开。调查发现，第一道锁是被正常打开的，而第二道锁则是被犯人用工具撬开的。更令人震惊的是，保险柜上的电子锁也被高科技手段破解了。</p>
+<p>至于监控，关键的内容均被犯人通过植入木马病毒的方式被清除。</p>
+<h2 id="7">【7】才客</h2>
+<p>三天后，法医叶雨约我在一家咖啡厅见面。</p>
+<p>“雨姐，你找我有什么事吗？”我问道，心里有些疑惑。</p>
+<p>叶雨微微一笑：“我想和你讨论一下关于你单位的盗窃案，相信你也很想破案吧。”</p>
+<p>我点点头，但疑惑仍未消除：“可是，你是法医，这种盗窃案应该不会让你经手吧。”</p>
+<p>叶雨轻轻摇了摇头：“这你就有所不知了。其实很多悬案都是我破的，所以如果他们有什么破不了的案件，也会问我的意见。因此，我时常会参与其他类型案件的侦破。呐，几年前的那起谋杀案，你也是功不可没呀。如果不是你提供了这么详尽的信息，估计它至今还是悬案呢。”</p>
+<p>“好吧，这次我也没有什么有用的信息。”我无奈地说，“当时我在办公室收拾东西，听到外面有一声巨响。我冲了出去，发现阿珊倒在地上，除此之外，没有其他线索。雨姐，你那边有没有什么新发现吗？”</p>
+<p>“因为我没有直接参与调查，所以目前只能通过同事了解情况。现在掌握的情况是：在排除了有不在场证明的人之后，以下几个人正在被调查，包括你的上司古在仁，审计部的郑嘉年，业务部的江月明，还有你的同事黄莉洁、陈玮珊，以及一些外来人员。”</p>
+<p>“这样啊，那么他们有没有什么线索？”</p>
+<p>“首先是古在仁。她供述，案发当天她和业务部的江月明以及宾客于晓良在她的办公室聊天。聊了一段时间后，她送两位到电梯处，然后回到办公室，将一个包裹交给黄莉洁，嘱咐她把包裹转交给于晓良，让于晓良再转交给她的一位朋友。接着，她就回到自己的办公室，大约在六点的时候下班。”</p>
+<p>“包裹的收货人是刘兰希，收货地址是她家，在距离X公司三十分钟路程的Z街道。这两个信息都写在包裹外面。我们后来也找刘兰希确认过，她肯定地说那天傍晚六点，一位女性将古在仁的包裹交给了她。收到包裹后，她就和丈夫就立刻离开家，去对面的那家热门餐厅吃晚饭。古在仁还是很讲情义的，还记得那天是她与丈夫结婚二十周年纪念日，那个包裹就是古在仁送的纪念礼物。”</p>
+<p>“刘兰希这个名字，怎么感觉这么熟悉？”</p>
+<p>“是的，你两个月前来我单位参观时确实见过这个名字，就是同一个人。”</p>
+<p>“郑嘉年和江月明的证词差不多，都说下班前一直在办公室，然后在下班时间离开，但没有其他人能够证明。”</p>
+<p>“黄莉洁证词是她一直在办公室，直到下班才离开，然后回家，但也没有证据证明她没有去盗窃。”</p>
+<p>“至于陈玮珊，我们了解到的情况和你所知道的差不多，另外从现场痕迹来看犯人逃跑时穿的是平底鞋，并非穿高跟鞋或内增高鞋。按照我的直觉，她应该和案件无关。”</p>
+<p>“好的，我还有一个同事美君，那天她一直没出现，她的情况怎么样？”</p>
+<p>“我们调查过美君，她确实和这起盗窃案无关。至于原因嘛，要不你试试看推理？”</p>
+<p>“啊？雨姐你怎么还卖关子呢，不过没关系，她不是犯人就好。”</p>
+<h2 id="8">【8】刺客</h2>
+<p>一个月后，一个阳光明媚的上午，我、玮珊和美君三人决定一起去医院探望我们的朋友莉洁。</p>
+<p>莉洁平时是个开朗活泼的女孩，但这次却因为一场意外住进了医院。我们心里都有些担忧，急切地想知道她的情况。</p>
+<p>我们走进病房时，莉洁正静静地躺在床上，脸色有些苍白，但精神还算不错。她看到我们，努力挤出一丝微笑，眼里闪烁着复杂的情绪。</p>
+<p>“小洁，你感觉怎么样？”美君关切地问道，走到床边轻轻握住她的手。</p>
+<p>“还好，医生说需要多休息。”莉洁的声音有些沙哑，但她仍然努力保持镇定。</p>
+<p>我们在床边坐下，空气中弥漫着一丝沉重的气氛。终于，玮珊忍不住问：“小洁，你是怎么受伤的？”</p>
+<p>莉洁深吸一口气，慢慢开口：“那天晚上我在大街上走着，突然看到一个人用刀捅另一个人。我当时吓坏了，想快点离开现场。可是，那个凶手捅完人后居然发现了我。”</p>
+<p>她的声音开始颤抖，但她继续说了下去：“他走过来捂住我的口鼻，我拼命挣扎，情急之下一拳打到了他的喉结。他可能感觉疼痛就放松了一下，我趁机大叫了一声。可是，他很快又打了我的头部，把我打晕了。后面的事情，我就不知道了。对于凶手的特征，我也完全没有印象。”</p>
+<p>听完她的话，我们三人都感到震惊和愤怒。玮珊握紧拳头，美君的眼眶微微发红，我则努力压抑着心中的愤怒。</p>
+<p>“幸好你还活着，小洁。这个世界太危险了。”我轻声说，“我们会一直陪在你身边，直到你完全康复。”</p>
+<p>莉洁的眼里闪过一丝感动，她点点头：“谢谢你们，我真的很感激。”</p>
+<p>我握紧拳头，决心要为她找到真相，替她报仇。这个凶手必须为他所做的一切付出代价。</p>
+<p>“我不会让这件事就这么过去的，”我对莉洁说，“我一定会找到那个凶手，让他得到应有的惩罚。”</p>
+<p>离开医院后，我立刻联系了我的朋友叶雨。</p>
+<p>电话很快接通了，叶雨的声音传来：“梅索上午好，你的朋友没事吧？”</p>
+<p>“对，雨姐，我就是为这事来的。”我问道，心中充满了期待。“你能告诉我一些具体的情况吗？”</p>
+<p>叶雨沉默了一会儿，然后说：“根据我们的调查，凶手的目的是求财，他捅了受害者张强六刀，拿走了受害者手上值五十万的戒指。作案后，他看见了莉洁，打算继续对她下手。幸好莉洁的那声尖叫引起了路人的注意，凶手没有继续伤害她。”</p>
+<p>我听得心惊肉跳，愤怒更是不可遏止。“那雨姐，你们有线索吗？有没有找到凶手的踪迹？”</p>
+<p>“目前调查组正在跟进调查中，目前暂未有收获，被抢劫的受害人惊吓过度，暂时提供不了有效的信息。”叶雨回复道，“我们会尽全力抓住他。”</p>
+<p>“如果你们需要任何帮助，请一定告诉我，”我说，“我一定要为小洁讨回公道。”</p>
+<p>“我明白你的心情，”叶雨安慰道，“但请冷静，警方会依法处理这个案件。你要相信我们。”</p>
+<p>挂断电话后，我的心情依然难以平静。我知道自己并不是警察，但我可以做很多事情来揭露真相。</p>
+<h2 id="9">【9】谋客</h2>
+<p>我陷入了深思。如果仅仅聚焦于单个案件，或许无法找到突破口。但如果将多个案件联系起来，是否会有新的发现呢？最近的张强案和姚克案中，受害者的都是被捅了六刀。姚克案中的凶手破坏了门锁进入屋内，而X公司的盗窃案中，犯罪者也是通过破坏门锁进行的。这两者之间是否存在某种关联？</p>
+<p>怀着这个疑问，我立刻将我的思路告诉了叶雨。</p>
+<p>几天后，叶雨向我反馈了调查结果。</p>
+<p>“你的思路确实给案件带来了极大的帮助，”叶雨说道，“经过仔细比对，我们发现张强所受的六刀和姚克所中的六刀，无论在力度、角度还是方向上几乎完全一致。基本可以确定是同一人所为。”</p>
+<p>我点了点头，心中感到一丝欣慰。</p>
+<p>“而且，”叶雨继续道，“X公司盗窃案和姚克案中，撬锁造成的痕迹也基本相同，我们怀疑犯人撬锁的方式是一样的，经过缜密的调查，也基本可以确定是同一人所为。”</p>
+<h2 id="10">【10】常客</h2>
+<p>由于我提供的思路帮助案件取得了突破性进展，警方决定对我进行表彰。就在颁奖仪式上，姚克突然出现在公安局的大门口。大家立即警觉起来，毕竟姚克经常因为各种违法犯罪被带进来。这次他主动找上门来，显得格外不寻常。</p>
+<p>姚克显得有些紧张，但他开口说道：“我想起来被抢走的信封里装的是什么了。”他的眼神中透露出一丝急切。</p>
+<p>大家的注意力一下子集中到了他身上。姚克继续说：“信封里有一把钥匙，是开保险箱的。还有一张纸条，上面写着保险箱的地址和密码。而且这个保险箱的情况只有我一个人知道。”</p>
+<p>叶雨立刻问道：“地址是什么？”</p>
+<p>姚克毫不犹豫地回答了一个地址。叶雨听后顿时神色一变：“是三年前那起盗窃保险箱案件的地址。”</p>
+<p>接着，姚克将写有密码的纸条递给了叶雨。叶雨接过纸条，瞳孔骤然放大，手中的纸条随即滑落。她喃喃道：“密码还真是这个。”</p>
+<p>我弯腰捡起纸条，不禁读了出来：</p>
+<p>5302</p>
+<h2 id="_1">挑战读者</h2>
+<p>谜题篇结束，<b>请分析并还原所有事件（包括1.三年前的盗窃案 2.美君与X公司失窃案无关的原因 3.“侠客”相关犯罪 4.其他细节）的真相</b>。</p>
+<blockquote>
+<p>注：</p>
+<p>1、谜题不存在叙述性诡计，梅索、叶雨陈述可信。</p>
+<p>2、本文的合谋仅考虑第0章中的两名“侠客”。其他的情况的合谋、包庇、掩护、威胁、逼迫皆不考虑。清白的人证词真实。姚克证词可信。</p>
+<p>3、本文所给线索已充足，不赞成额外添加线索。</p>
+<p>4、本文部分推理点需要结合现实生活进行思考。</p>
+<p>5、5302这串数字与案件无关，读者无需过多考虑。</p>
+</blockquote>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      本站点中所有内容均为原创。未经作者允许私自转载者，我们将追究法律责任
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.60a45f97.min.js"></script>
+      
+    
+  </body>
+</html>
